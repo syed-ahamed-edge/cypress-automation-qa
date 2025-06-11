@@ -1,0 +1,49 @@
+{
+  "name": "cypress-automation-qa",
+  "version": "1.0.0",
+  "description": "This is a Cypress-based End-to-End (E2E) Test Automation Framework built using the Page Object Model (POM) design pattern. It demonstrates UI test automation best practices using Cypress for scalable, maintainable, and readable test suites.",
+  "homepage": "https://github.com/syed-ahamed-edge/cypress-automation-qa#readme",
+  "bugs": {
+    "url": "https://github.com/syed-ahamed-edge/cypress-automation-qa/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syed-ahamed-edge/cypress-automation-qa.git"
+  },
+  "license": "MIT",
+  "author": "Syed Ahamed G S Mohieen",
+  "main": "index.js",
+  "scripts": {
+    "cy:open:chrome": "yarn run cypress open --e2e --browser chrome",
+    "cy:open:edge": "yarn run cypress open --e2e --browser edge",
+    "cy:open:electron": "yarn run cypress open --e2e --browser electron",
+    "cy:open:firefox": "yarn run cypress open --e2e --browser firefox",
+    "cy:run:chrome": "yarn run cypress run --e2e --browser chrome",
+    "cy:run:edge": "yarn run cypress run --e2e --browser edge",
+    "cy:run:electron": "yarn run cypress run --e2e --browser electron",
+    "cy:run:firefox": "yarn run cypress run --e2e --browser firefox",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,mdx}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,mdx}\"",
+    "format:config": "prettier --find-config-path \"./\"",
+    "format:debug": "prettier --debug-check \"**/*.{js,jsx,ts,tsx,json,md,mdx}\"",
+    "format:list": "prettier --list-different \"**/*.{js,jsx,ts,tsx,json,md,mdx}\"",
+    "format:plugins": "prettier --list-plugins"
+  },
+  "dependencies": {
+    "cypress": "^14.3.3",
+    "prettier-plugin-jsdoc": "^1.3.2",
+    "prettier-plugin-packagejson": "^2.5.12"
+  },
+  "devDependencies": {
+    "@babel/core": "7.25.2",
+    "@babel/preset-env": "7.25.3",
+    "@cypress/webpack-preprocessor": "^6.0.4",
+    "@faker-js/faker": "^9.8.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "babel-loader": "^8.3 || ^9 || ^10",
+    "cypress-wait-for-stable-dom": "^0.1.0",
+    "papaparse": "^5.5.3",
+    "prettier": "^3.5.3",
+    "webpack": "^4 || ^5"
+  }
+}

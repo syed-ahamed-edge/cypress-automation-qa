@@ -1,0 +1,28 @@
+# Ignore artifacts:
+build
+coverage
+
+# Dependencies
+node_modules/
+
+# Cypress artifacts
+cypress/coverage/
+cypress/downloads/
+cypress/screenshots/
+cypress/videos/
+cypress/test-results/
+
+# Test reports
+mochawesome-report/
+allure-report/
+
+# Coverage
+coverage/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+
+# Configs / env (if you don’t want to commit secrets)
+.env

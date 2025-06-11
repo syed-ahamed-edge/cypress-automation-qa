@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": ["cypress/support/common/*"],
+      "@components/*": ["cypress/support/components/*"],
+      "@pages/*": ["cypress/support/pages/*"],
+      "@selectors/*": ["cypress/support/selectors/*"],
+      "@utils/*": ["cypress/support/utils/*"]
+    }
+  },
+  "include": ["**/*.js"],
+  "exclude": ["node_modules"]
+}
